@@ -12,7 +12,7 @@ public class CandidateEntity {
     private UUID id;
     private String name;
 
-    @Pattern(regexp = "^(?!\\s*$).+", message = "o campo username não pode conter espaços")
+    @Pattern(regexp = "\\S+", message = "o campo username não pode conter espaços")
     private String username;
 
     @Email(message = "invalid field error")
